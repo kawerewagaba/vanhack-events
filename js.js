@@ -9,8 +9,10 @@ let state = localStorage.getItem('state')
       eventsAppliedFor: []
     };
 
-// list all events, on load
-listAllEvents();
+window.onload = function() {
+  // list all events, on load
+  listAllEvents();
+}
 
 /**
  * listAllEvents
